@@ -4,7 +4,7 @@ const VARIANT: usize = 3; // 4 -1
 const BITTNESS: usize = 16;
 
 fn main() {
-    let hadamard = generate_hadamard_mx(16);
+    let hadamard = generate_hadamard_mx(BITTNESS);
     let data = read_data("DataBinary.dat");
     let result = decipher(&data, &hadamard[VARIANT]);
     println!(
